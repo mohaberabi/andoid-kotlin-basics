@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:padding="16dp"
+
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/questionText"
+            android:textColor="#363A43"
+            android:gravity="center"
+            tools:text="What Does Flag Belong To...?"
+            android:textSize="22sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/questionFlag"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+
+            tools:src="@drawable/ic_flag_of_argentina"
+            android:contentDescription="Question Image"
+
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="0dp"
+                android:max="9"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                android:progress="0"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/progrssBar"
+                android:layout_height="wrap_content">
+
+
+            </ProgressBar>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textStyle="normal"
+                android:id="@+id/progresText"
+                tools:text="20/10"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:layout_height="match_parent">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:id="@+id/op1"
+            tools:text="20/10"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:background="@drawable/option_border_bg"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:id="@+id/op2"
+            tools:text="20/10"
+            android:gravity="center"
+            android:layout_margin="8dp"
+
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:background="@drawable/option_border_bg"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:id="@+id/op3"
+            tools:text="20/10"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:layout_margin="8dp"
+
+            android:background="@drawable/option_border_bg"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="normal"
+            android:id="@+id/op4"
+            tools:text="20/10"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:layout_margin="8dp"
+
+            android:background="@drawable/option_border_bg"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/submitBtn"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+</ScrollView>

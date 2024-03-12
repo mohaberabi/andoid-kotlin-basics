@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quizo</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="welcome">Welcome</string>
+    <string name="textFieldNameHint">Mohab Erabi</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="start">Start</string>
+</resources>

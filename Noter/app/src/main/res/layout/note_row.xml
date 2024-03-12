@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="10dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Lets Start Losing again"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/notTitle"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/noteDesc"
+                android:text="Loser of the all time is me mohab the loser erabi "
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

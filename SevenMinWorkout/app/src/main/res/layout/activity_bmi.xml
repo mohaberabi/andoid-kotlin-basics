@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Bmi">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/toolbar"
+
+        android:layout_height="?android:attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:checked="true"
+
+            android:text="US Sytem"
+            android:id="@+id/radioUs"
+
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:text="Metric"
+            android:checked="false"
+            android:id="@+id/radioMetric"
+
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/radioGroup"
+        android:id="@+id/weightInputLayout"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/green"
+
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:id="@+id/weightEditText"
+            android:hint="Weight"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/weightInputLayout"
+        android:id="@+id/heightInputLayout"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/green"
+
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+
+            android:id="@+id/heightEditText"
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+
+
+        tools:visibility="visible"
+        android:visibility="invisible"
+        android:layout_below="@+id/heightInputLayout"
+        android:layout_width="wrap_content"
+        android:id="@+id/resultLinearLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/bmiResultVal"
+            android:text="20.4"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/bmiResultText"
+            android:text="OVerWight babe"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:text="Calculate"
+        android:id="@+id/calcButton"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:layout_below="@+id/resultLinearLayout"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>
